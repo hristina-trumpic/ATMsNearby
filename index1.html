@@ -10,35 +10,36 @@
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <style>
-    /* Always set the map height explicitly to define the size of the div
-     * element that contains the map. */
+
   #map {
     height: 100%;
   }
-    /* Optional: Makes the sample page fill the window. */
+
   html, body {
     height: 100%;
+    width: 80%;
     margin: 0;
     padding: 0;
   }
   </style>
 </head>
 <body>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrmbZZR1Ar4GN-1lZPOk_7PDtQBfbVv6k&libraries=places"></script>
   <div id="map"></div>
   <script>
-    // Note: This example requires that you consent to location sharing when
+    // Note: This requires that you consent to location sharing when
     // prompted by your browser. If you see the error "The Geolocation service
-    // failed.", it means you probably did not give permission for the browser to
-    // locate you.
+    // failed.", it means you probably did not give permission for the browser to locate you.
     var map, infoWindow;
     function initMap() {
       map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: -34.397, lng: 150.644},
+        center: {lat: 44.8151597, lng: 20.2825119},
         zoom: 12
       });
       infoWindow = new google.maps.InfoWindow;
 
-      // Try HTML5 geolocation.
+
+      // HTML5 geolocation.
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
           var pos = {
@@ -70,5 +71,25 @@
   <script async defer
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC74WGbIMHZv8NKnGAy1FGodydM8kYGyrI&callback=initMap">
   </script>
+
+  </script>
 </body>
 </html>
+
+
+POST https://maps.googleapis.com/maps/api/place/add/json?key=YOUR_API_KEY HTTP/1.1
+Host: maps.googleapis.com
+
+{
+  "location": {
+    "lat": -33.8669710,
+    "lng": 151.1958750
+  },
+  "accuracy": 50,
+  "name": "Google Shoes!",
+  "phone_number": "(02) 9374 4000",
+  "address": "48 Pirrama Road, Pyrmont, NSW 2009, Australia",
+  "types": ["shoe_store"],
+  "website": "http://www.google.com.au/",
+  "language": "en-AU"
+}
