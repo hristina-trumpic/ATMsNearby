@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Place searches</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="js.js"></script>
+  </head>
+  <body>
+
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 style="color: white">ATMs Nearby</h1> <hr>
+        </div>
+      </div>
+    </div>
+
+    <div class ="container-fluid text-center">
+      <div class ="row">
+        <div class ="col-md-6"> <!-- Map goes here -->
+          <h2 style="color: white">Location on map:</h2>
+            <div id="map"></div>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBEngjm6l93jY5Fpq1-cUwl1SfRdITK8M&libraries=places&callback=initMap" async defer></script>
+        </div>
+        <div class ="col-md-6 col-sm-6"> <!-- List of banks goes here -->
+           <h2 style="color: white">List of all Telenor ATMs:</h2>
+            <div class="list-group">
+              <a href="" class="list-group-item">
+                <h3>Ace Joksimovića 2b, Beograd</h3>
+                <p>BEOGRAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Balkanska 14, Beograd </h3>
+                <p>BEOGRAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Bulevar Kralja Aleksandra 168, Beograd </h3>
+                <p>BEOGRAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Bulevar Mihajla Pupina 4, Beograd </h3>
+                <p>BEOGRAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Bulevar umetnosti 4, Beograd </h3>
+                <p>BEOGRAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Francuska 37a, Beograd </h3>
+                <p>BEOGRAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Jurija Gagarina 28a, Beograd </h3>
+                <p>BEOGRAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Jurija Gagarina 16, Beograd </h3>
+                <p>BEOGRAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Katanićeva 1, Beograd </h3>
+                <p>BEOGRAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Knez Mihajlova 24, Beograd </h3>
+                <p>BEOGRAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Kneza Mihaila 24, Beograd </h3>
+                <p>BEOGRAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Kneza Višeslava 63, Beograd </h3>
+                <p>BEOGRAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Kralja Milana 25 (24/7 zona), Beograd </h3>
+                <p>BEOGRAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Maksima Gorkog 19, Beograd </h3>
+                <p>BEOGRAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Maksima Gorkog 73, Beograd </h3>
+                <p>BEOGRAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Maršala Birjuzova 2-4, Beograd </h3>
+                <p>BEOGRAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Obrenovački put 3, Beograd </h3>
+                <p>BEOGRAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Omladinskih brigada 90v, Beograd </h3>
+                <p>BEOGRAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Omladinskih brigada 90, Beograd </h3>
+                <p>BEOGRAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Palmira Toljatija 7, Beograd </h3>
+                <p>BEOGRAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Partizanske Avijacije bb, Beograd </h3>
+                <p>BEOGRAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Paunova 24, Beograd </h3>
+                <p>BEOGRAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Požeška 79, Beograd </h3>
+                <p>BEOGRAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Rableova 1, Beograd </h3>
+                <p>BEOGRAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Surčin, Beograd </h3>
+                <p>BEOGRAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Topličin venac 3, Beograd </h3>
+                <p>BEOGRAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Ustanička 170E, Beograd </h3>
+                <p>BEOGRAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Višnjička 84, Beograd </h3>
+                <p>BEOGRAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Vojvode Stepe 197, Beograd </h3>
+                <p>BEOGRAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>XI krajiške divzije 56, Beograd </h3>
+                <p>BEOGRAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Zaplanjska 32, Beograd </h3>
+                <p>BEOGRAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Zeleni Venac bb, Beograd </h3>
+                <p>BEOGRAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Gradsko šetalište 19, Čačak </h3>
+                <p>ČAČAK | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Vojvode Stepe 1, Inđija </h3>
+                <p>INĐIJA | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Kneginje Milice 15, Jagodina </h3>
+                <p>JAGODINA | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Smederevski put 29e, Kaluđerica </h3>
+                <p>KALUĐERICA | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Kralja Petra I 23, Kragujevac </h3>
+                <p>KRAGUJEVAC | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Kraljice Marije bb, Kragujevac </h3>
+                <p>KRAGUJEVAC | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Save Kovačevića 48a, Kragujevac</h3>
+                <p>KRAGUJEVAC | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Omladinska 10, Kraljevo </h3>
+                <p>KRALJEVO | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Mirka Tomića 1/21, Kruševac </h3>
+                <p>KRUŠEVAC | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Karađorđeva 29, Lazarevac </h3>
+                <p>LAZAREVAC | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Vojvode Mišića 1, Leskovac </h3>
+                <p>LESKOVAC | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Obrenovićeva bb, Niš </h3>
+                <p>NIŠ | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Trg Kralja Milana 2/15 2/15, Niš </h3>
+                <p>NIŠ | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Vizantijski bulevar 1, Niš </h3>
+                <p>NIŠ | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>28. novembra 15, Novi Pazar </h3>
+                <p>NOVI PAZAR | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Bulevar Oslobođenja 102, Novi Sad </h3>
+                <p>NOVI SAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Modene 1, Novi Sad </h3>
+                <p>NOVI SAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Ognjena Price 11, Novi Sad </h3>
+                <p>NOVI SAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Sentandrejski put 11, Novi Sad </h3>
+                <p>NOVI SAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Sutjeska 2, Novi Sad </h3>
+                <p>NOVI SAD | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Miloša Obrenovića 83, Obrenovac </h3>
+                <p>OBRENOVAC | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Generala Petra Aračića (Petra Drapšina) 2, Pančevo </h3>
+                <p>PANČEVO | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Lenjinova 3, Požarevac </h3>
+                <p>POŽAREVAC | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Trg Republike 13, Smederevo</h3>
+                <p>SMEDEREVO | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Kralja Petra I 16, Sombor </h3>
+                <p>SOMBOR | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Trg Ćire Milekića 22 22, Sremska Mitrovica </h3>
+                <p>SREMSKA MITROVICA | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Trg slobode 2, Subotica </h3>
+                <p>SUBOTICA | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Gospodar Jevremova 9, Šabac</h3>
+                <p>ŠABAC | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Dimitrija Tucovića 61, Užice </h3>
+                <p>UŽICE | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Karađorđeva 83, Valjevo </h3>
+                <p>VALJEVO | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Kralja Stefana Prvovenčanog 184, Vranje </h3>
+                <p>VRANJE | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Trg pobede 4, Vršac </h3>
+                <p>VRŠAC | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Trg pobede 4, Vršac </h3>
+                <p>VRŠAC | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Glavna 33, Zemun </h3>
+                <p>ZEMUN | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Prvomajska 7a, Zemun </h3>
+                <p>ZEMUN | BANKOMAT</p>
+              </a>
+              <a href="" class="list-group-item">
+                <h3>Kralja Aleksandra I Karađorđevića 15, Zrenjanin </h3>
+                <p>ZRENJANIN | BANKOMAT</p>
+              </a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-12">
+          <hr><div class="button btn-info"></div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

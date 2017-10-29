@@ -1,9 +1,45 @@
-#map {
-  height: 100%;
+html, body {
+  background: url(bg.jpg);
+  background-color: rgba(0,193,25,0.2);
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode: soft-light;
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+#map {
+  height: 500px;
+  width: auto;
+}
+
+h1 {
+  font-size: 60px;
+  padding-top: 20px;
+  text-decoration: underline;
+  font-family: 'Rancho', cursive;
+}
+
+h2 {
+  font-size: 50px;
+  padding-bottom: 20px;
+  text-decoration: underline;
+  /*font-family: 'Fredoka One', cursive;*/
+  font-family: 'Rancho', cursive;
+}
+
+.list-group {
+  height: 500px;
+  overflow-x: scroll;
+
+}
+
+.list-group-item {
+  background-color: AliceBlue;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+p {
+   font-size: 15px;
 }
